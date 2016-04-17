@@ -14,11 +14,35 @@
       </a>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+	<ul class="menu">
+        {% for nav in site.data.menu %}
+
+           {% if nav.sub != null %}
+
+	    <li>
+	      <a class="page-link" href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a>
+	      <ul class="menu">
+		<!-- 2nd level -->
+		{% for sub in nav.sub %}
+		<li>
+		  <a class="page-link" href="{{ site.baseurl }}{{ sub.href }}">
+		    {{ sub.title }}
+		  </a>
+		</li>
+		{% endfor %}
+	      </ul>
+	    </li>
+
+	  {% else %}
+
+		  <li>
+		    <a class="page-link" href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a>
+		  </li>
+
           {% endif %}
+
         {% endfor %}
+	</ul>
       </div>
     </nav>
 
