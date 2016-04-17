@@ -1,28 +1,28 @@
 - title: "O que é?"
-  href: "/pt/o_que_e/o_que_e.md"
+  href: "/o_que_e"
   sub:
     - title: "Para empresas"
-      href: "/pt/o_que_e/empresas.md"
+      href: "/empresas"
     - title: "Para pesquisadores"
-      href: "/pt/o_que_e/pesquisadores.md"
+      href: "/pesquisadores"
 
 - title: "Quem somos?"
-  href: "/pt/quem_somos.md"
+  href: "/quem_somos"
 
 - title: "Como participar?"
-  href: "/pt/como_participar/como_participar.md"
+  href: "/como_participar"
   sub:
     - title: "Documentação"
-      href: "/pt/como_participar/documentacao.md"
+      href: "documentacao"
     - title: "Qualidade"
-      href: "/pt/como_participar/qualidade.md"
+      href: "qualidade"
 
 - title: "Exemplos"
-  href: "/pt/exemplo.md"
+  href: "/exemplos"
 
 - title: "Baixar / Downloads"
-  href: "/pt/downloads.md"
+  href: "/downloads"
 
 - title: "Contato"
-  href: "/pt/contato.md"
+  href: "/contato"
 

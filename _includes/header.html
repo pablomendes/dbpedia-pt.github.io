@@ -20,12 +20,12 @@
            {% if nav.sub != null %}
 
 	    <li>
-	      <a class="page-link" href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a>
+	      <a class="page-link" href="{{ nav.href | prepend: site.baseurl }}">{{ nav.title }}</a>
 	      <ul class="menu">
 		<!-- 2nd level -->
 		{% for sub in nav.sub %}
 		<li>
-		  <a class="page-link" href="{{ site.baseurl }}{{ sub.href }}">
+		  <a class="page-link" href="{{ site.baseurl }}{{ sub.href | prepend: nav.href }}">
 		    {{ sub.title }}
 		  </a>
 		</li>
@@ -36,7 +36,7 @@
 	  {% else %}
 
 		  <li>
-		    <a class="page-link" href="{{ nav.url | prepend: site.baseurl }}">{{ nav.title }}</a>
+		    <a class="page-link" href="{{ nav.href | prepend: site.baseurl }}">{{ nav.title }}</a>
 		  </li>
 
           {% endif %}
